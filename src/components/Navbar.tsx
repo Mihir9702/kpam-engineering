@@ -81,7 +81,7 @@ export default function Navbar() {
         </li>
 
         <li className="hover:text-kpam-blue">
-          <Link href="">Contact</Link>
+          <Link href="contact">Contact</Link>
         </li>
       </ul>
     </nav>

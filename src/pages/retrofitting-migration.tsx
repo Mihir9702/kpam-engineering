@@ -7,7 +7,7 @@ export default function RetrofittingMigration() {
   return (
     <main>
       <Navbar />
-      <Header text="Automation Upgrading, Retrofitting & Migration" />
+      <Header title="Automation Upgrading, Retrofitting & Migration" />
       <RetrofittingMigrationText />
       <Footer />
     </main>

@@ -7,7 +7,7 @@ export default function StreamlinedScada() {
   return (
     <main>
       <Navbar />
-      <Header text="Streamlined SCADA Programming" />
+      <Header title="Streamlined SCADA Programming" />
       <StreamlinedScadaText />
       <Footer />
     </main>
