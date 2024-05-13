@@ -1,0 +1,99 @@
+{
+  "streamlinedScada": {
+    "leftColumn": [
+      {
+        "title": "SCADA SYSTEM SOLUTIONS TAILORED TO YOU",
+        "content": "Kpam Engineering&apos;s seasoned team of SCADA programmers understands that delivering clear information, intuitive system controls, and user-friendly navigation lie at the heart of exceptional SCADA/HMI programming. These factors ultimately drive operational efficiency and performance. What sets us apart is our commitment to designing to your standards - we never force you into a rigid mold. And if you&apos;re still establishing your standards, rest assured, we bring exceptional ones to the table. Either way, we handle the heavy lifting while ensuring your involvement every step of the way, ensuring a system you&apos;ll genuinely love."
+      },
+      {
+        "title": "Selecting the Perfect SCADA System",
+        "content": "The SCADA system is the brain behind your automation setup, making the choice of the right system crucial. Often, the ability to monitor and control systems and processes isn&apos;t feasible for humans due to location, cost, or complexity."
+      }
+    ],
+    "rightColumn": [
+      {
+        "title": "HARDWARE",
+        "content": "Compatibility with your existing hardware is key. We consider the equipment in place at your site(s) and ensure it aligns with your selected SCADA system."
+      },
+      {
+        "title": "REQUIREMENTS",
+        "content": "Your chosen system should support both your current and future needs, including expansions or increasing data-dependent users."
+      },
+      {
+        "title": "COST",
+        "content": "Remember that quality counts. Initial costs may not reflect the long-term expenses. Consider inspection, maintenance, repair costs, and the potential impact of the proposed SCADA system on total operational costs."
+      },
+      {
+        "title": "SERVICE & SUPPORT",
+        "content": "A reputable, stable integrator is vital. The team implementing the system matters more than the platform itself, as they&apos;ll be responsible for troubleshooting, upgrades, and ongoing support."
+      },
+      {
+        "title": "SECURITY",
+        "content": "Address potential security risks by conducting a vulnerability assessment and implementing best practices to close any gaps."
+      }
+    ],
+    "advantages": [
+      {
+        "title": "Advantages of SCADA / HMI Systems",
+        "content": "Data-driven decisions propel businesses ahead. A robust SCADA system provides historical insights into automated systems, controlling machinery and processes via HMI. Benefits include:"
+      },
+      {
+        "title": "Maximum Productivity",
+        "content": "SCADA&apos;s multi-level redundancy ensures constant communication and operation for maximum productivity."
+      },
+      {
+        "title": "Improved Product Quality",
+        "content": "SCADA analyzes and controls product quality using features like Statistical Process Control (SPC)."
+      },
+      {
+        "title": "Reduced Costs",
+        "content": "Centralized SCADA reduces operating and maintenance costs."
+      },
+      {
+        "title": "Integration",
+        "content": "Easily integrate SCADA with business systems, enhancing production and decision-making."
+      },
+      {
+        "title": "Capital Investment Protection",
+        "content": "A well-designed, open SCADA system safeguards against obsolescence and scales as demands grow."
+      },
+      {
+        "title": "How Can We Assist You?",
+        "content": "If you&apos;re considering a new SCADA system or need an evaluation of your existing one, give us a call for a chat. We&apos;ll find the best way to make your life a little easier."
+      }
+    ]
+  },
+
+  "retrofittingMigration": {
+    "title": {
+      "title": "Mitigating Obsolescence Risks in Industrial Control Systems",
+      "content": "Automation systems, like all technologies, have a finite lifespan. As technology evolves, older systems may become outdated, presenting challenges for businesses. With the rapid retirement of experienced personnel, the need to address obsolescence risk becomes even more urgent. Our approach is to collaborate with clients to determine the optimal strategy for their situation, be it retrofitting, complete system upgrading, or transitioning to newer technology. Experienced control engineers ensure these processes are seamless, providing enhanced security and integration into existing operations."
+    },
+    "description": {
+      "title": "Efficient and Cost-Effective PLC Retrofit Solutions",
+      "content": "Aging PLC controls often suffer from discontinued components or scarcity of replacement parts. This situation can lead to significant downtime. Retrofitting is a remedy, involving the replacement of old components with new ones, resulting in a more stable system and potential performance enhancements. <br /> Our retrofitting process starts with an evaluation of organizational goals and technical requirements. Live Automation guides you in selecting suitable equipment and handles the engineering, installation, and commissioning stages. We offer a range of options, including upgrading drives, replacing membrane keypad HMIs with touchscreens."
+    },
+    "benefits": [
+      {
+        "title": "Benefits of Retrofitting",
+        "content": "When faced with aging or obsolete hardware and software, the instinct might be to overhaul the entire industrial control system. However, retrofitting can offer an alternative that provides the following benefits:"
+      },
+      {
+        "title": "COST-EFFECTIVE REPAIRS",
+        "content": "Retrofitting minimizes the need for repairs by using readily available and supported components, reducing the risk of expensive downtime."
+      },
+      {
+        "title": "SPACE SAVING",
+        "content": "Newer components tend to be smaller, saving valuable panel space."
+      },
+      {
+        "title": "ENERGY EFFICIENCY",
+        "content": "Upgraded components offer improved energy efficiency compared to older counterparts."
+      },
+      {
+        "title": "ENHANCED PERFORMANCE",
+        "content": "Retrofitting often leads to improved functionality. Live Automation can address process optimization during the retrofitting process."
+      }
+    ]
+  }
+}

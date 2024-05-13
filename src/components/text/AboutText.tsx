@@ -1,7 +1,7 @@
 export default function AboutText() {
   return (
     <div>
-      <h1 className="text-kpam-light-blue text-3xl">KPAM ENGINEERING</h1>
+      <h1 className="text-kpam-blue font-semibold text-3xl">KPAM ENGINEERING</h1>
       <br />
       <p className="max-w-lg text-md">
         KPAM Engineering is a team of strategists, inventors, designers, and
@@ -20,7 +20,7 @@ export default function AboutText() {
         success in a variety of industries, including:
         <br />
         <br />
-        <ul className="list-disc mx-4">
+        <ul className="list-disc mx-8">
           <li>Wide Web Paper Manufacturing</li>
           <li>Wide Web Paper Printer/Converting</li>
           <li>Wide Web Flexible Film Extrusion </li>
