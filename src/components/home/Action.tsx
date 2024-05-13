@@ -21,14 +21,6 @@ export default function Action() {
       <section className="bg-kpam-blue py-8 flex justify-center items-center">
         <Image src={car1} alt="car1" />
         <Link href="/contact">
-          <button
-            className="
-        p-3 border-2 shadow-lg
-        bg-kpam-blue hover:bg-kpam-blue-o transition-all 
-        rounded-lg px-6 text-lg text-white"
-          >
-            Get a Quote
-          </button>
         </Link>
         <Image src={car2} alt="car2" />
       </section>

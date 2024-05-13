@@ -16,7 +16,7 @@ export default function CTA() {
         </p>
       </div>
 
-      <button className="uppercase bg-kpam-light-blue hover:bg-kpam-light-blue-o transition-all w-fit mx-auto rounded-md px-8 p-3">
+      <button className="uppercase font-bold bg-kpam-blue hover:bg-kpam-blue-o transition-all w-fit mx-auto rounded-md px-8 p-3">
         Get in touch
       </button>
     </main>

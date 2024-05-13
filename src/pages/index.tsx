@@ -1,15 +1,12 @@
 import Action from "@/components/home/Action";
-import Navbar from "@/components/Navbar";
 import Content from "@/components/home/Content";
 import CTA from "@/components/home/CTA"
 import Feature from "@/components/home/Feature"
-import Footer from "@/components/Footer"
 import { cards, moreCards } from "@/helpers/getCards";
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <Action />
       <Feature />
       <Content
@@ -28,12 +25,9 @@ export default function Home() {
             automation and control system solutions."
         cards={moreCards}
       />
+      <div className="py-8 bg-gray-100" />
 
-      <div className="py-8 border-2 bg-gray-100" />
       <CTA />
-      <div className="py-8 border-2 bg-gray-100" />
-
-      <Footer />
     </main>
   );
 }

@@ -38,7 +38,7 @@ export const moreCards = [
   },
   {
     title: ProductServicesList[1],
-    href: "/automation-process-controls",
+    href: "/strategic-advisory-system-integration",
     src: AutomationProcessControls,
     alt: ProductServicesList[1],
   },

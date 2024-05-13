@@ -22,7 +22,7 @@ export default function StreamlinedScadaText() {
 
 function LeftColumn() {
   return (
-    <div className="flex flex-col gap-8 max-w-xl">
+    <div className="flex flex-col gap-8 max-w-2xl">
       {data.streamlinedScada.leftColumn.map((textContent) => (
           <Content
             key={textContent.title}
@@ -34,8 +34,8 @@ function LeftColumn() {
      )}
 
       <div>
-        <div className="flex flex-col items-end gap-36 my-8">
-          <Image src={System} alt="content-image" className="self-start" />
+        <div className="flex flex-col items-center gap-36 my-8">
+          <Image src={System} alt="content-image" />
         </div>
 
         <div>

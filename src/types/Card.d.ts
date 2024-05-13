@@ -2,5 +2,7 @@ declare interface Card {
   title: string
   href: string
   src: StaticImageData
-  alt: string
+
+  alt?: string
+  content?: string
 }

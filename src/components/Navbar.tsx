@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/logo.png";
+import imgSrc from "../../public/logo.png";
 import { useState } from "react";
 import { cards, moreCards } from "@/helpers/getCards";
 import { useRouter } from "next/router";
@@ -12,7 +12,7 @@ export default function Navbar() {
   const router = useRouter();
   return (
     <nav className="flex bg-gray-100 justify-around items-center py-12">
-      <Image src={logo} alt="logo" onClick={() => router.push("/")} />
+      <Image src={imgSrc} alt="logo" onClick={() => router.push("/")} />
       <ul className="flex justify-end gap-10 p-4 text-xl">
         <li className="hover:text-kpam-blue">
           <Link href="/about">About</Link>
@@ -77,11 +77,11 @@ export default function Navbar() {
         </li>
 
         <li className="hover:text-kpam-blue">
-          <Link href="">Blog</Link>
+          <Link href="/blog">Blog</Link>
         </li>
 
         <li className="hover:text-kpam-blue">
-          <Link href="contact">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
     </nav>

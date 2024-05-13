@@ -6,7 +6,7 @@ const AutomationSolutionsList: string[] = [
 
 const ProductServicesList: string[] = [
   "Retrofitting, Upgrading & Migration",
-  "Automation & Process Controls Engineering",
+  "Strategic Advisory & System Integration",
   "Machinery Design & Construction",
   "Enhancing Overall Equipment Effectiveness (OEE)",
   "Consulting & Integration",

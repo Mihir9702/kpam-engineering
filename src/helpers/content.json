@@ -95,5 +95,56 @@
         "content": "Retrofitting often leads to improved functionality. Live Automation can address process optimization during the retrofitting process."
       }
     ]
+  },
+
+  "strategicAdvisorySystem": {
+    "column": [
+      {
+        "title": "FORWARD-FOCUSED INDUSTRIAL AUTOMATION CONSULTATION AND SEAMLESS INTEGRATION",
+        "content": "The ever-evolving landscape of modern technologies presents a challenge for companies striving to capitalize on automation opportunities and trends that can propel them ahead of competitors. This is where we step in. As visionary control system integrators, we bridge the gap between technology and your business. Particularly when internal resources or the required expertise are lacking, we assume this crucial responsibility."
+      },
+      {
+        "title": "Efficiency Enhancement with Proficient Control System Integration",
+        "content": "Optimizing your current system's efficiency goes beyond the mere adoption of new technologies. Whether your objective entails incorporating PLC controls into an existing framework or undertaking a complete system migration, our team of mechanical and technical experts collaborates with you to formulate and implement a solution that boosts performance and processes – today and for decades to come."
+      },
+      {
+        "title": "Our Expertise, Your Industry Edge",
+        "content": "Our engineers possess a wealth of experience in integrating PLC controls and systems across diverse industries, encompassing food and beverage, medical textiles and devices, high-precision optics, among others. By closely collaborating with clients to address industry-specific needs and challenges, we are well-versed not only in the global industry landscape but also in the intricate details that can either make or break an investment in automated technology."
+      },
+      {
+        "title": "How Can We Assist You?",
+        "content": "At KPAM Engineering, we arrive at work each day with a singular objective – to provide our clients with the finest in industrial automation solutions, services, and support. We eagerly await your conversation. Reach out to us at +1 (267) 949-5726"
+      }
+    ]
+
+  },
+
+  "machineryDesignConstruction": {
+    "content": [
+      {
+        "title": "Exploring Process Automation - Research, Concept Development & Prototyping",
+        "content": "Innovation. Speed. Unconventional solutions. It's a familiar scenario – having a brilliant idea without a clear roadmap for its execution (or maybe you have the plan but lack the right partner to bring it to life.) Every remarkable project commences with an idea, requiring a specialized team dedicated to turning that concept into reality. Live Automation has guided numerous clients from concept to production, and we're here to guide you too."
+      },
+      {
+        "title": "Advocates for Your Vision",
+        "content": "Whether conceiving novel products that are yet to exist or devising processes to surpass current technological boundaries, our team of engineers stands out for their exceptional technical prowess, creative flair, and adept problem-solving skills. Together, they transform ideas into solutions within a remarkably short timeframe. We're poised to research, prototype, and test your concept (we can even assist in shaping the concept) within our facility."
+      },
+      {
+        "title": "To Prototype or Not to Prototype?",
+        "content": "Frequently, our R&D and prototype clients approach us with ideas, seeking a knowledgeable partner to elevate their concepts. The initial stages of new product development hold substantial potential to impact innovation outcomes. Do you require 3D printing, animated solid models, or simulated control systems? Prototypes play a pivotal role in exploring diverse concepts, diminishing technical uncertainties. When a prototype substantiates an idea's value, there's an unparalleled sense of accomplishment."
+      },
+      {
+        "title": "Evaluation and Design Testing",
+        "content": "Ideas and design sketches can often differ significantly from the real-world context where the product will operate. Prototyping allows us to interact with an actual version of the product, unveiling its strengths and pinpointing areas for revision or refinement. This process may reveal oversights that remained unnoticed on paper."
+      },
+      {
+        "title": "Assessing Costs and Issues",
+        "content": "Prototyping before production grants insight into the production process, enabling us to optimize, combine, or eliminate steps. This streamlines production and minimizes associated costs."
+      },
+      {
+        "title": "How Can We Collaborate?",
+        "content":"Explore our tried-and-true process for customized automation success and witness how we can materialize your concept. We embrace challenges – throw any at us. We thrive on solving them! Call (267) 768-8538 to initiate a conversation."
+      }
+    ]
   }
 }

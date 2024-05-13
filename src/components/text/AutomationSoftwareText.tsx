@@ -1,6 +1,6 @@
 export default function AutomationSoftwareText() {
   return (
-    <div className="flex flex-col gap-8 max-w-xl">
+    <div className="flex flex-col gap-8 max-w-2xl">
       <div>
         <h1 className="text-kpam-blue font-bold text-2xl uppercase">
           We&apos;re the experts in PLC Automation
