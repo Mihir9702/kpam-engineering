@@ -104,7 +104,7 @@ export default function Footer() {
                       href="/about"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>About Us</p>
+                      About Us
                     </Link>
                   </li>
                   <li>
@@ -112,7 +112,7 @@ export default function Footer() {
                       href="/blog"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>Blog</p>
+                      Blog
                     </Link>
                   </li>
                   <li>
@@ -120,7 +120,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>Products</p>
+                      Products
                     </Link>
                   </li>
                   <li>
@@ -128,7 +128,7 @@ export default function Footer() {
                       href="#"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>Services</p>
+                      Services
                     </Link>
                   </li>
                 </ul>
@@ -143,7 +143,7 @@ export default function Footer() {
                       href="/license"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>Legal</p>
+                      Legal
                     </Link>
                   </li>
                   <li>
@@ -151,7 +151,7 @@ export default function Footer() {
                       href="/terms"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>Terms &amp; Conditions</p>
+                      Terms &amp; Conditions
                     </Link>
                   </li>
                   <li>
@@ -159,7 +159,7 @@ export default function Footer() {
                       href="/privacy"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>Privacy Policy</p>
+                      Privacy Policy
                     </Link>
                   </li>
                   <li>
@@ -167,7 +167,7 @@ export default function Footer() {
                       href="/contact"
                       className="text-gray-100 hover:text-gray-300 font-semibold block pb-2 text-sm"
                     >
-                      <p>Contact Us</p>
+                      Contact Us
                     </Link>
                   </li>
                 </ul>

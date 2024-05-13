@@ -1,8 +1,12 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 import logo from "../../public/logo.png";
 import { useState } from "react";
-import { AutomationSolutionsList, ProductServicesList } from '@/helpers/ListOptions';
+import {
+  AutomationSolutionsList,
+  ProductServicesList,
+} from "@/helpers/ListOptions";
+import { cards, moreCards } from "@/helpers/getCards";
 
 export default function Navbar() {
   const [showAutomationSolutions, setShowAutomationSolutions] = useState(false);
@@ -30,15 +34,14 @@ export default function Navbar() {
                 gap-1 my-1 z-10 bg-gray-100 border-2 border-kpam-blue
                 text-[16px] max-w-[200px] text-center rounded-lg"
             >
-              {AutomationSolutionsList.map((listOption: string, i: number) => (
-                <li key={listOption}>
-                  <p
-                    className={`${
-                      i % 2 !== 0 ? "bg-gray-200" : ""
-                    } hover:bg-kpam-blue hover:text-white cursor-pointer`}
-                  >
-                    {listOption}
-                  </p>
+              {cards.map((card, i) => (
+                <li
+                  key={card.title}
+                  className={`${
+                    i % 2 !== 0 ? "bg-gray-200" : ""
+                  } hover:bg-kpam-blue hover:text-white cursor-pointer`}
+                >
+                  <Link href={card.href}>{card.title}</Link>
                 </li>
               ))}
             </ul>
@@ -59,15 +62,14 @@ export default function Navbar() {
                 gap-1 my-1 z-10 bg-gray-100 border-2 border-kpam-blue
                 text-[16px] max-w-[200px] text-center rounded-lg"
             >
-              {ProductServicesList.map((listOption: string, i: number) => (
-                <li key={listOption}>
-                  <p
-                    className={`${
-                      i % 2 !== 0 ? "bg-gray-200" : ""
-                    } hover:bg-kpam-blue hover:text-white cursor-pointer`}
-                  >
-                    {listOption}
-                  </p>
+              {moreCards.map((card, i) => (
+                <li
+                  key={card.title}
+                  className={`${
+                    i % 2 !== 0 ? "bg-gray-200" : ""
+                  } hover:bg-kpam-blue hover:text-white cursor-pointer`}
+                >
+                  <Link href={card.href}>{card.title}</Link>
                 </li>
               ))}
             </ul>
@@ -84,4 +86,4 @@ export default function Navbar() {
       </ul>
     </nav>
   );
-};
+}
