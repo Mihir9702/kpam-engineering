@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import autoSoftware from "@/../public/Automation Software.jpg";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import AutomationSoftwareText from "@/components/AutomationSoftwareText"
+import AutomationSoftwareText from "@/components/text/AutomationSoftwareText"
 
 export default function DigitalAutomationTransformation() {
   return (
@@ -11,7 +11,7 @@ export default function DigitalAutomationTransformation() {
       <Navbar />
       <Header text="Automation Software and Solutions for PLC & HMI" />
 
-      <section className="bg-gray-100 flex items-start justify-center gap-8">
+      <section className="bg-gray-100 flex items-start justify-center gap-8 py-8">
         <AutomationSoftwareText />
         <Image src={autoSoftware} alt="" className="" />
       </section>

@@ -23,7 +23,7 @@ export const cards = [
   },
   {
     title: AutomationSolutionsList[2],
-    href: "/hmi-scada-programming",
+    href: "/streamlined-scada",
     src: HMISCADA,
     alt: AutomationSolutionsList[2],
   },

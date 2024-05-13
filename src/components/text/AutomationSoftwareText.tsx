@@ -6,7 +6,7 @@ export default function AutomationSoftwareText() {
           We&apos;re the experts in PLC Automation
         </h1>
 
-        <p className="">
+        <p>
           Our journey began as the PLC GUYS, and we&apos;re incredibly proud of
           our roots! This foundation has solidified our belief that reliable,
           easily maintainable PLC controls lie at the core of lean manufacturing
@@ -24,7 +24,7 @@ export default function AutomationSoftwareText() {
         <h1 className="text-kpam-blue font-semibold text-xl">
           Revamping or Crafting New PLC & HMI Systems
         </h1>
-        <p className="">
+        <p>
           Are you working with an existing system or diving into something
           entirely new? Rest assured, we&apos;re here to assist. Whether
           you&apos;re automating machinery, adding or modifying plant processes,
@@ -36,7 +36,7 @@ export default function AutomationSoftwareText() {
           including:
         </p>
         <br />
-        <p className="">
+        <p>
           We&apos;ve partnered with a diverse array of businesses, ranging from
           highly automated enterprises using custom machinery to those new to
           automation seeking step-by-step guidance. Regardless of where your
@@ -48,7 +48,7 @@ export default function AutomationSoftwareText() {
         </p>
 
         <br />
-        <ul className="list-disc">
+        <ul className="list-disc mx-4">
           <li>Allen-Bradley / Rockwell Automation</li>
           <li>Siemens</li>
           <li>Omron</li>
@@ -82,7 +82,7 @@ export default function AutomationSoftwareText() {
           Proficiency in HMI Platforms Live Automation excels in various HMI
           platforms, including:
         </h1>
-        <ul className="list-disc">
+        <ul className="list-disc mx-4">
           <li>Fuji Electric / Monitouch</li>
           <li>Allen Bradley Panelview, PanelView Plus</li>
           <li>Siemens</li>

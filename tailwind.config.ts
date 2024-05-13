@@ -11,8 +11,8 @@ const config: Config = {
       colors:  {
         'kpam-blue': '#3865a7',
         'kpam-blue-o': '#3855a7',
-        'kpam-light-blue': '#6bb3cc',
-        'kpam-light-blue-o': '#6ba3cc'
+        'kpam-light-blue': '#7cdef9',
+        'kpam-light-blue-o': '#7ccef9'
       },
 
       backgroundImage: {

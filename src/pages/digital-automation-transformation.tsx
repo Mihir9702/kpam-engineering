@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import AutomationTransformation from "@/../public/AUTOMATION TRANSFORMATION.jpg";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import DigitalAutomationTransformationText from "@/components/DigitalAutomationTransformationText";
+import DigitalAutomationTransformationText from "@/components/text/DigitalAutomationTransformationText";
 
 export default function DigitalAutomationTransformation() {
   return (
