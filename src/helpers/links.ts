@@ -1,5 +1,3 @@
-import { AutomationSolutionsList, ProductServicesList } from "@/helpers/ListOptions";
-
 import DigitalAnimationTransformation from '@/assets/stock/Digital Automation Transformation.jpg'
 import AutomationSoftware from '@/assets/stock/Automation Software.jpg'
 import HMISCADA from '@/assets/cartoon/HMI SCADA.jpg'
@@ -11,6 +9,21 @@ import MachineryDesignConstruction from '@/assets/stock/Machinery Design and Con
 import OEE from '@/assets/stock/Enhancing Overall.jpg';
 import ConsultingIntegration from '@/assets/stock/Consulting and Integration.jpg'
 import OnsiteRemoteService from '@/assets/stock/24-HOUR SERVICE.jpg'
+
+export const AutomationSolutionsList: string[] = [
+  "Digital Automation Transformation",
+  "Automation Software & Solutions",
+  "HMI / SCADA Programming",
+];
+
+export const ProductServicesList: string[] = [
+  "Retrofitting, Upgrading & Migration",
+  "Strategic Advisory & System Integration",
+  "Machinery Design & Construction",
+  "Enhancing Overall Equipment Effectiveness (OEE)",
+  "Consulting & Integration",
+  "24/7 Service & Support (Onsite / Remote)",
+];
 
 export const AutomationSolutionsLink = [
   {

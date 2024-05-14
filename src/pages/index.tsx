@@ -2,7 +2,7 @@ import Action from "@/components/home/Action";
 import Content from "@/components/home/Content";
 import CTA from "@/components/home/CTA"
 import Feature from "@/components/home/Feature"
-import { AutomationSolutionsLink, ProductServicesLink } from "@/helpers/getLinks";
+import { AutomationSolutionsLink, ProductServicesLink } from "@/helpers/links";
 
 export default function Home() {
   return (

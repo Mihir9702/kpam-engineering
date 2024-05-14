@@ -5,7 +5,7 @@ import { useState } from "react";
 import {
   AutomationSolutionsLink,
   ProductServicesLink,
-} from "@/helpers/getLinks";
+} from "@/helpers/links";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
