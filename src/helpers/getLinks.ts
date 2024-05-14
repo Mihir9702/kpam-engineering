@@ -1,16 +1,16 @@
 import { AutomationSolutionsList, ProductServicesList } from "@/helpers/ListOptions";
 
-import DigitalAnimationTransformation from '@/../public/kpam/Digital Automation Transformation.jpg'
-import AutomationSoftware from '@/../public/kpam/Automation Software.jpg'
-import HMISCADA from '@/../public/kpam/HMI SCADA.jpg'
+import DigitalAnimationTransformation from '@/assets/stock/Digital Automation Transformation.jpg'
+import AutomationSoftware from '@/assets/stock/Automation Software.jpg'
+import HMISCADA from '@/assets/cartoon/HMI SCADA.jpg'
 
-import RetrofittingMigration from '@/../public/kpam/RetroFitting Migration.jpg'
-import AutomationProcessControls from '@/../public/kpam/Automation and Process Controls.jpg';
-import MachineryDesignConstruction from '@/../public/kpam/Machinery Design and Construction.jpg';
+import RetrofittingMigration from '@/assets/stock/RetroFitting Migration.jpg'
+import AutomationProcessControls from '@/assets/stock/Automation and Process Controls.jpg';
+import MachineryDesignConstruction from '@/assets/stock/Machinery Design and Construction.jpg';
 
-import OEE from '@/../public/kpam/Enhancing Overall.jpg';
-import ConsultingIntegration from '@/../public/Consulting and Integration.jpg'
-import OnsiteRemoteService from '@/../public/24-HOUR SERVICE.jpg'
+import OEE from '@/assets/stock/Enhancing Overall.jpg';
+import ConsultingIntegration from '@/assets/stock/Consulting and Integration.jpg'
+import OnsiteRemoteService from '@/assets/stock/24-HOUR SERVICE.jpg'
 
 export const AutomationSolutionsLink = [
   {

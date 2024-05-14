@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import AutomationTransformationSrc from "@/../public/AUTOMATION TRANSFORMATION.jpg";
+import AutomationTransformationSrc from "@/assets/stock/AUTOMATION TRANSFORMATION.jpg";
 import Image from "next/image";
 import DigitalAutomationTransformationText from "@/components/text/DigitalAutomationTransformationText";
 

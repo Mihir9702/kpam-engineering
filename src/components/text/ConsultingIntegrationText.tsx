@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Consulting from '@/../public/Consulting.png'
+import Consulting from '@/assets/cartoon/Consulting.png'
 import Image from "next/image"
 
 export default function ConsultingIntegrationText() {

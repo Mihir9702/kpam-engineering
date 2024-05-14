@@ -1,6 +1,6 @@
 import Image from "next/image";
-import AssemblyEquipmentSrc from "@/../public/Assembly Equipment.jpg";
-import BenefitsTailoredSrc from "@/../public/Benefits of Tailored.jpg";
+import AssemblyEquipmentSrc from "@/assets/stock/Assembly Equipment.jpg";
+import BenefitsTailoredSrc from "@/assets/stock/Benefits of Tailored.jpg";
 
 export default function DigitalAutomationTransformationText() {
   return (

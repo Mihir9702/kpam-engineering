@@ -3,7 +3,7 @@ export default function AboutText() {
     <div>
       <h1 className="text-kpam-blue font-semibold text-3xl">KPAM ENGINEERING</h1>
       <br />
-      <p className="max-w-lg text-md">
+      <div className="max-w-lg text-md">
         KPAM Engineering is a team of strategists, inventors, designers, and
         engineers who provide expertise and leadership in various aspects of
         engineering and product development.
@@ -50,7 +50,7 @@ export default function AboutText() {
         If you are looking for a team of experienced and dedicated engineers,
         KPAM Engineering is the right choice for you. Contact us today to learn
         more about our services.
-      </p>
+      </div>
     </div>
   );
 }

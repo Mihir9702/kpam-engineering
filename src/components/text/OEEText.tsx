@@ -1,4 +1,4 @@
-import OEE from "@/../public/OEE.jpg";
+import OEE from "@/assets/cartoon/OEE.jpg";
 import Image from "next/image";
 
 export default function OEEText() {

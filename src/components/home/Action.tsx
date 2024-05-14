@@ -1,7 +1,7 @@
 import Image from "next/image";
-import car1 from "@/../public/car1.png";
-import car2 from "@/../public/car2.png";
 import Link from "next/link";
+import car1 from '@/assets/cartoon/car1.png'
+import car2 from '@/assets/cartoon/car2.png'
 
 export default function Action() {
   return (
