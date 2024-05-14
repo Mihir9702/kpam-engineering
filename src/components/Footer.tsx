@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import imgSrc from "@/assets/logo-away.png";
+import logo from '@/assets/logo-away.png'
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap text-left lg:text-left">
           <div className="w-full lg:w-6/12 px-4">
-            <Image src={imgSrc} alt="logo" />
+            <Image src={logo} alt="logo" />
             <div className="m-4 flex gap-4">
               <button
                 className="bg-gray-100 text-blue-500 hover:bg-gray-300 hover:text-blue-600 transition-all p-2 rounded-full shadow-md"
