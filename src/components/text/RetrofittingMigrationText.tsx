@@ -1,8 +1,8 @@
 import data from "@/helpers/content.json";
 import Content from "../Content";
 import Image from "next/image";
-import AutomationUpgradingSrc from "@/../public/Automation Upgrading.jpg";
-import AutomationImprovementSrc from "@/../public/Automation Improvement.png";
+import AutomationUpgradingSrc from "@/../assets/Automation Upgrading.jpg";
+import AutomationImprovementSrc from "@/../assets/Automation Improvement.png";
 
 export default function RetrofittingMigrationText() {
   return (

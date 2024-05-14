@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Onsite from '@/../public/Onsite.jpg'
+import Onsite from '@/../assets/Onsite.jpg'
 
 export default function OnsiteRemoteSupportText() {
   return (

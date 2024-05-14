@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import AutomationSoftwareSrc from "@/../public/Automation Software.jpg";
+import AutomationSoftwareSrc from "@/../assets/Automation Software.jpg";
 
 export default function AutomationSoftwareText() {
   return (

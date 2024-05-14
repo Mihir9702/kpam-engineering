@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import imgSrc from "../../public/logo.png";
+import imgSrc from "../../assets/logo.png";
 import { useState } from "react";
 import {
   AutomationSolutionsLink,

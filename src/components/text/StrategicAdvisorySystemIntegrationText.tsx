@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Content from "../Content";
 import data from "@/helpers/content.json";
-import imgSrc from '@/../public/Strategic.jpg'
+import imgSrc from '@/../assets/Strategic.jpg'
 
 export default function StrategicAdvisorySystemIntegrationText() {
   return (

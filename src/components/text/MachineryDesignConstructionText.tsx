@@ -1,7 +1,7 @@
 import Content from "../Content";
 import Image from "next/image";
 import data from "@/helpers/content.json";
-import imgSrc from "@/../public/Machinery Design and Construction.jpg";
+import imgSrc from "@/../assets/Machinery Design and Construction.jpg";
 
 export default function MachineryDesignConstructionText() {
   return (

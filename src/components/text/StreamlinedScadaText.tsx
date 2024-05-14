@@ -1,9 +1,9 @@
 import Image from "next/image";
-import System from "@/../public/art/SCADA Control System.jpg";
-import Computer from "@/../public/art/SCADA Computer.jpg";
-import Experience from "@/../public/art/SCADA Experience.jpg";
-import Innovation from "@/../public/art/SCADA Innovation.png";
-import Panel from "@/../public/art/SCADA Panel.jpg";
+import System from "@/../assets/art/SCADA Control System.jpg";
+import Computer from "@/../assets/art/SCADA Computer.jpg";
+import Experience from "@/../assets/art/SCADA Experience.jpg";
+import Innovation from "@/../assets/art/SCADA Innovation.png";
+import Panel from "@/../assets/art/SCADA Panel.jpg";
 import Content from "../Content";
 import data from "@/helpers/content.json";
 

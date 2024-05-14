@@ -1,5 +1,5 @@
-import post1 from "@/../public/post1.png";
-import post2 from "@/../public/post2.png";
+import post1 from "@/../assets/post1.png";
+import post2 from "@/../assets/post2.png";
 import Card from "../Card"
 
 export default function BlogText() {

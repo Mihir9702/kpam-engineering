@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import AboutText from "@/components/text/AboutText"
-import imgSrc from "@/../public/tech-graphic.png";
+import imgSrc from "@/../assets/tech-graphic.png";
 
 export default function About() {
   return (
