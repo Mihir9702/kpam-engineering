@@ -5,14 +5,16 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/flowbite/**/*.js",
   ],
+
   theme: {
     extend: {
-      colors:  {
-        'kpam-blue': '#3865a7',
-        'kpam-blue-o': '#3855a7',
-        'kpam-light-blue': '#7cdef9',
-        'kpam-light-blue-o': '#7ccef9'
+      colors: {
+        "kpam-blue": "#3865a7",
+        "kpam-blue-o": "#3855a7",
+        "kpam-light-blue": "#7cdef9",
+        "kpam-light-blue-o": "#7ccef9",
       },
 
       backgroundImage: {
@@ -22,6 +24,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
 export default config;

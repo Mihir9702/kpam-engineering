@@ -20,6 +20,12 @@ export default function BlogText() {
             return <Card key={i} title={title} content={content} src={post} href="#" />
           })}
         </div>
+
+        <div className="flex gap-8 my-8">
+          {[post2, post1, post2].map((post, i) => {
+            return <Card key={i} title={title} content={content} src={post} href="#" />
+          })}
+        </div>
       </div>
     </section>
   );
