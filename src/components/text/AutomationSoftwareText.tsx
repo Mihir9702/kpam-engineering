@@ -1,30 +1,32 @@
+import Link from "next/link";
+import Image from "next/image";
+import AutomationSoftwareSrc from "@/../public/Automation Software.jpg";
+
 export default function AutomationSoftwareText() {
   return (
-    <div className="flex flex-col gap-8 max-w-2xl">
-      <div>
-        <h1 className="text-kpam-blue font-bold text-2xl uppercase">
-          We&apos;re the experts in PLC Automation
+    <section className="bg-gray-100">
+      <div className="max-w-4xl mx-auto py-8 px-4">
+        <h1 className="text-3xl font-bold mb-4 text-kpam-blue">
+          Automation Software and Solutions for PLC & HMI
         </h1>
-
-        <p>
-          Our journey began as the PLC GUYS, and we&apos;re incredibly proud of
-          our roots! This foundation has solidified our belief that reliable,
-          easily maintainable PLC controls lie at the core of lean manufacturing
-          objectives and modern industrial automation systems. Backed by a team
-          of adept PLC programming resources, we swiftly consult on,
-          troubleshoot, and resolve any issues that might jeopardize operations.
-          With PLC controls steering the success of your automation investments,
-          we consider it paramount to be your automation partner - one that
-          offers experienced, creative, and innovative PLC programming
-          resources, ready to tackle any challenge that comes our way.
+        <p className="text-lg mb-6">
+          We&apos;re the experts in PLC automation. Our journey began as the PLC
+          GUYS, and we&apos;re incredibly proud of our roots! This foundation
+          has solidified our belief that reliable, easily maintainable PLC
+          controls lie at the core of lean manufacturing objectives and modern
+          industrial automation systems. Backed by a team of adept PLC
+          programming resources, we swiftly consult on, troubleshoot, and
+          resolve any issues that might jeopardize operations. With PLC controls
+          steering the success of your automation investments, we consider it
+          paramount to be your automation partner - one that offers experienced,
+          creative, and innovative PLC programming resources, ready to tackle
+          any challenge that comes our way.
         </p>
-      </div>
 
-      <div className="flex flex-col">
-        <h1 className="text-kpam-blue font-semibold text-xl">
+        <h2 className="text-2xl font-bold mb-2 text-kpam-blue">
           Revamping or Crafting New PLC & HMI Systems
-        </h1>
-        <p>
+        </h2>
+        <p className="text-lg mb-6">
           Are you working with an existing system or diving into something
           entirely new? Rest assured, we&apos;re here to assist. Whether
           you&apos;re automating machinery, adding or modifying plant processes,
@@ -32,11 +34,10 @@ export default function AutomationSoftwareText() {
           operate across numerous automation platforms sets us apart from the
           rest. Regardless of the PLC platform you choose, we&apos;re
           well-prepared to meet your needs, holding software licenses and
-          trained experts for nearly all current and legacy PLC platforms,
-          including:
+          trained experts for nearly all current and legacy PLC platforms.
         </p>
-        <br />
-        <p>
+
+        <p className="text-lg mb-6">
           We&apos;ve partnered with a diverse array of businesses, ranging from
           highly automated enterprises using custom machinery to those new to
           automation seeking step-by-step guidance. Regardless of where your
@@ -47,23 +48,11 @@ export default function AutomationSoftwareText() {
           requirements.
         </p>
 
-        <br />
-        <ul className="list-disc mx-4">
-          <li>Allen-Bradley / Rockwell Automation</li>
-          <li>Siemens</li>
-          <li>Omron</li>
-          <li>Schneider / Modicon</li>
-          <li>GE Intelligent Platforms</li>
-          <li>Automation Direct</li>
-          <li>Mitsubishi</li>
-          <li>Breweries</li>
-          <li>plus many more</li>
-        </ul>
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">
+        <h2 className="text-2xl font-bold mb-2 text-kpam-blue">
           Seamless Migration of Existing PLC Controls
-        </h1>
-        <p>
+        </h2>
+        <Image src={AutomationSoftwareSrc} alt="automation-software" />
+        <p className="text-lg my-4">
           In the world of technology, nothing lasts forever. The silver lining,
           however, is that modern automation technology boasts exceptional
           capabilities (far superior to just five years ago.) The imperative of
@@ -77,91 +66,59 @@ export default function AutomationSoftwareText() {
           but also seamlessly integrates into your current processes.
         </p>
 
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">
-          Proficiency in HMI Platforms Live Automation excels in various HMI
-          platforms, including:
-        </h1>
-        <ul className="list-disc mx-4">
-          <li>Fuji Electric / Monitouch</li>
-          <li>Allen Bradley Panelview, PanelView Plus</li>
-          <li>Siemens</li>
-          <li>Exor</li>
-          <li>Red Lion</li>
-          <li>Pro Face</li>
-          <li>Unitronics</li>
-          <li>Breweries</li>
-          <li>and many more</li>
+        <h2 className="text-2xl font-bold mb-2 text-kpam-blue">
+          Proficiency in HMI Platforms
+        </h2>
+        <p className="text-lg mb-6">
+          We excel in various HMI platforms, including Fuji Electric /
+          Monitouch, Allen Bradley Panelview, PanelView Plus, Siemens, Exor, Red
+          Lion, Pro Face, Unitronics, and many more.
+        </p>
+
+        <h3 className="text-xl font-bold mb-2 text-kpam-blue">
+          Benefits of HMI
+        </h3>
+        <ul className="list-disc ml-6 text-kpam-blue">
+          <li className="text-lg mb-2">
+            <p className="text-black">
+              HMIs provide real-time textual or graphical insight into system
+              conditions and operations – a level of vital information absent in
+              simple pushbutton panels or switch banks.
+            </p>
+          </li>
+          <li className="text-lg mb-2">
+            <p className="text-black">
+              With HMIs offering robust monitoring, control, status reporting,
+              data collection, and more, you can optimize your PLC investment,
+              driving operational efficiency and profitability.
+            </p>
+          </li>
+          <li className="text-lg mb-2">
+            <p className="text-black">
+              HMIs enhance communication between devices, connecting devices and
+              machines together while adding functionality.
+            </p>
+          </li>
+          <li className="text-lg mb-2">
+            <p className="text-black">
+              HMI simulation facilitates equipment testing without physical
+              setups, improving overall production and minimizing startup time.
+            </p>
+          </li>
         </ul>
 
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">
-          Benefits of HMI
-        </h1>
-        <p>
-          HMIs provide real-time textual or graphical insight into system
-          conditions and operations – a level of vital information absent in
-          simple pushbutton panels or switch banks. With HMIs offering robust
-          monitoring, control, status reporting, data collection, and more, you
-          can optimize your PLC investment, driving operational efficiency and
-          profitability.
-        </p>
-
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">
-          HIGH-QUALITY GRAPHICS:
-        </h1>
-
-        <p>
-          Operators gain a realistic view of the plant and centralized control.
-          This also enhances security by minimizing the need for operators to
-          approach hazardous equipment for control.
-        </p>
-
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">ALARMS:</h1>
-        <p>
-          These help operators detect malfunctions and errors, promoting faster
-          reactions and potentially preventing issues.
-        </p>
-
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">
-          RECIPE MANAGERS:
-        </h1>
-
-        <p>
-          Simplify the control of both simple and intricate recipes, reducing
-          the chance of errors.
-        </p>
-
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">
-          ACCURATE TESTING WITH SIMULATION:
-        </h1>
-        <p>
-          HMI simulation facilitates equipment testing without physical setups,
-          improving overall production and minimizing startup time.
-        </p>
-
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">REDUCED COSTS:</h1>
-        <p>
-          HMIs replace numerous push buttons, lights, and selectors, reducing
-          unnecessary hardware costs and maximizing space utilization. IMPROVED
-          COMMUNICATION: HMIs enhance communication between devices, connecting
-          devices and machines together while adding functionality.
-        </p>
-
-        <br />
-        <h1 className="text-kpam-blue font-semibold text-xl">
+        <h2 className="text-2xl font-bold mb-2 text-kpam-blue">
           How Can We Assist You?
-        </h1>
-        <p>
-          Reach out to us at +1 267 949 5726 and present us with a challenge -
-          we&apos;re passionate about solving problems
+        </h2>
+        <p className="text-lg mb-6">
+          Reach out to us at{" "}
+          <Link href="tel:+12679495726" className="text-kpam-blue">
+            +1 267 949 5726
+          </Link>{" "}
+          and present us with a challenge - we&apos;re passionate about solving
+          problems.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

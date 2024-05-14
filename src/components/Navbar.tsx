@@ -17,14 +17,14 @@ export default function Navbar() {
     <nav className="flex bg-gray-100 text-gray-900 justify-around items-center py-12">
       <Image src={imgSrc} alt="logo" onClick={() => router.push("/")} />
       <ul className="flex justify-end gap-10 p-4 text-xl">
-        <li className="hover:text-kpam-blue">
+        <li className="hover:text-kpam-blue font-semibold">
           <Link href="/about">About</Link>
         </li>
         <li onMouseOver={() => setShowAutomationSolutions(true)}>
           <p
             className={`${
               showAutomationSolutions && "text-kpam-blue"
-            } cursor-pointer`}
+            } cursor-pointer font-semibold`}
           >
             Automation Solutions
           </p>
@@ -54,7 +54,7 @@ export default function Navbar() {
           <p
             className={`${
               showProductServices && "text-kpam-blue"
-            } cursor-pointer`}
+            } cursor-pointer font-semibold`}
           >
             Product & Services
           </p>
@@ -80,11 +80,11 @@ export default function Navbar() {
           )}
         </li>
 
-        <li className="hover:text-kpam-blue">
+        <li className="hover:text-kpam-blue font-semibold">
           <Link href="/blog">Blog</Link>
         </li>
 
-        <li className="hover:text-kpam-blue">
+        <li className="hover:text-kpam-blue font-semibold">
           <Link href="/contact">Contact</Link>
         </li>
       </ul>

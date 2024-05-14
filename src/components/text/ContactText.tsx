@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function ContactText() {
   return (
     <section className="bg-gray-100" id="contact">
@@ -39,49 +41,72 @@ function ContactTitle() {
 }
 
 function ContactForm() {
+  const info = { name: "", email: "", phone: "", company: "", message: "" };
+  const [data, setData] = useState<Contact>(info);
+  const url = process.env.EMAIL_SCRIPT_API || "";
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    try {
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "text/plain;charset=utf-8",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => res.json)
+        .then((data) => console.log(data));
+    } catch (ex) {
+      console.error(ex);
+    }
+  };
+
   return (
     <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
-      <form id="contactForm">
+      <form id="contactForm" onSubmit={handleSubmit}>
         <div className="mb-6">
           <div className="mx-0 mb-1 sm:mb-4">
             <div className="mx-0 mb-1 sm:mb-4">
               <input
                 type="text"
                 id="name"
-                autoComplete="given-name"
                 placeholder="Name"
                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-kpam-blue outline-kpam-blue sm:mb-0"
                 name="name"
+                onChange={(e) => setData({ ...data, name: e.target.value })}
               />
             </div>
             <div className="mx-0 mb-1 sm:mb-4">
               <input
                 type="text"
                 id="company"
-                autoComplete="given-company"
                 placeholder="Company"
                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-kpam-blue outline-kpam-blue sm:mb-0"
                 name="company"
+                onChange={(e) => setData({ ...data, company: e.target.value })}
               />
             </div>
             <div className="mx-0 mb-1 sm:mb-4">
               <input
                 type="email"
                 id="email"
-                autoComplete="email"
                 placeholder="Email"
                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-kpam-blue outline-kpam-blue sm:mb-0"
                 name="email"
+                onChange={(e) => setData({ ...data, email: e.target.value })}
               />
             </div>
             <div className="mx-0 mb-1 sm:mb-4">
               <input
-                type="text"
-                id="phone-number"
-                autoComplete="phone-number"
-                placeholder="Phone Number"
+                type="tel"
+                id="phone"
+                autoComplete="phone"
+                placeholder="Phone"
                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-kpam-blue outline-kpam-blue sm:mb-0"
-                name="phone-number"
+                name="phone"
+                onChange={(e) => setData({ ...data, phone: e.target.value })}
               />
             </div>
           </div>
@@ -93,6 +118,7 @@ function ContactForm() {
               rows={5}
               placeholder="Write your message..."
               className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-kpam-blue outline-kpam-blue sm:mb-0"
+              onChange={(e) => setData({ ...data, message: e.target.value })}
             ></textarea>
           </div>
         </div>
