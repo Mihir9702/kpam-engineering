@@ -2,7 +2,7 @@ import DigitalAnimationTransformation from '@/assets/stock/Digital Automation Tr
 import AutomationSoftware from '@/assets/stock/Automation Software.jpg'
 import HMISCADA from '@/assets/cartoon/HMI SCADA.jpg'
 
-import RetrofittingMigration from '@/assets/stock/RetroFitting Migration.jpg'
+import RetrofittingMigration from '@/assets/stock/Retrofitting Migration.jpg'
 import AutomationProcessControls from '@/assets/stock/Automation and Process Controls.jpg';
 import MachineryDesignConstruction from '@/assets/stock/Machinery Design and Construction.jpg';
 
