@@ -13,7 +13,7 @@ export default function Content({ title, content, cards }: Content) {
           </h2>
         </div>
       </section>
-      <section className="flex w-full bg-gray-100 justify-center gap-8 p-8">
+      <section className="flex flex-col md:flex-row w-full bg-gray-100 justify-center gap-8 p-8">
         {cards.map((card) => (
           <Card
             key={card.title}

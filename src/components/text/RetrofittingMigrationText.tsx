@@ -7,19 +7,19 @@ import AutomationImprovementSrc from "@/assets/cartoon/Automation Improvement.pn
 export default function RetrofittingMigrationText() {
   return (
     <section>
-      <div className="bg-gray-100 flex items-start justify-center gap-8 py-16">
+      <div className="bg-gray-100 px-3 md:px-0 flex flex-col md:flex-row items-start justify-center gap-8 py-16">
         <div className="max-w-2xl flex flex-col gap-8">
           <Content
             title={data.retrofittingMigration.title.title}
             content={data.retrofittingMigration.title.content}
             headerSize="text-2xl"
           />
+          <Image src={AutomationImprovementSrc} alt="automation-improvement" />
           <Content
             title={data.retrofittingMigration.description.title}
             content={data.retrofittingMigration.description.content}
             headerSize="text-xl"
           />
-          <Image src={AutomationImprovementSrc} alt="automation-improvement" />
         </div>
 
         <div>

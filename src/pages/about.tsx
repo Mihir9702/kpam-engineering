@@ -8,9 +8,9 @@ export default function About() {
     <main>
       <Header title="About Us" />
 
-      <section className="bg-gray-100 border-2 flex gap-8 justify-center p-8 max-w-1/2">
+      <section className="bg-gray-100 border-2 flex flex-col md:flex-row gap-8 justify-center p-8 max-w-1/2">
         <AboutText />
-        <Image className="w-1/5 h-max" src={imgSrc} alt="tech-graphic" />
+        <Image className="md:w-1/5 h-max" src={imgSrc} alt="tech-graphic" />
       </section>
     </main>
   );

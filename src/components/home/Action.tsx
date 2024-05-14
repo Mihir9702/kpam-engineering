@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import car1 from '@/assets/cartoon/car1.png'
-import car2 from '@/assets/cartoon/car2.png'
+import car1 from "@/assets/cartoon/car1.png";
+import car2 from "@/assets/cartoon/car2.png";
 
 export default function Action() {
   return (
@@ -19,10 +19,8 @@ export default function Action() {
       </section>
 
       <section className="bg-kpam-blue py-8 flex justify-center items-center">
-        <Image src={car1} alt="car1" />
-        <Link href="/contact">
-        </Link>
-        <Image src={car2} alt="car2" />
+        <Image src={car2} alt="car2" className="overflow-auto w-full"  />
+        <Image src={car1} alt="car1" className="overflow-auto w-full" />
       </section>
     </main>
   );

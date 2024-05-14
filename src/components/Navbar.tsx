@@ -6,11 +6,14 @@ import { useRouter } from "next/router";
 import { AutomationSolutionsLink, ProductServicesLink } from "@/helpers/links";
 import ChevronUp from "@/assets/svg/chevron-up.svg";
 import ChevronDown from "@/assets/svg/chevron-down.svg";
+import Menu from "@/assets/svg/menu.svg";
 
 export default function Navbar() {
   const router = useRouter();
+  const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
-    <nav className="flex bg-gray-100 text-gray-900 justify-around items-center py-12">
+    <nav className="flex bg-gray-100 text-gray-900 justify-between lg:justify-around px-4 lg:px-0 items-center py-12">
       <Image
         src={imgSrc}
         alt="logo"
@@ -18,6 +21,13 @@ export default function Navbar() {
         className="cursor-pointer"
       />
 
+      <Image
+        src={Menu}
+        alt="menu-icon"
+        className="lg:hidden"
+        onClick={() => setToggleMenu(!toggleMenu)}
+      />
+      {toggleMenu && <MobileNavView />}
       <Links />
     </nav>
   );
@@ -25,7 +35,7 @@ export default function Navbar() {
 
 function Links() {
   return (
-    <ul className="flex justify-end gap-10 p-4 text-xl">
+    <ul className="hidden lg:flex justify-end gap-10 p-4 text-xl">
       <li className="hover:text-kpam-blue font-semibold">
         <Link href="/about">About</Link>
       </li>
@@ -123,6 +133,60 @@ function ProductAndServices() {
             ))}
           </div>
         </div>
+      </div>
+    </div>
+  );
+}
+function MobileNavView() {
+  const [toggleAutomation, setToggleAutomation] = useState(false);
+  const [toggleProduct, setToggleProduct] = useState(false);
+
+  return (
+    <div
+      className={`absolute top-24 right-10 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
+    >
+      <div className={`p-1 py-2 `} role="none">
+        <Link href="/about">
+          <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+            About
+          </li>
+        </Link>
+        <li
+          onClick={() => setToggleAutomation(!toggleAutomation)}
+          className="cursor-pointer block px-4 py-2 text-center text-sm bg-gray-100"
+        >
+          Automation Solutions
+        </li>
+        {toggleAutomation && AutomationSolutionsLink.map((link, i) => (
+          <Link href={link.href} title={link.title} key={link.title}>
+            <li className={`${i % 2 == 0 ? 'bg-white' : 'bg-gray-200'} cursor-pointer block px-4 py-2 text-center text-sm`}>
+              {link.title}
+            </li>
+          </Link>
+        ))}
+        <li
+          onClick={() => setToggleProduct(!toggleProduct)}
+          className="cursor-pointer block px-4 py-2 text-center text-sm"
+        >
+          Product & Services
+        </li>
+        {toggleProduct && ProductServicesLink.map((link, i) => (
+          <Link href={link.href} title={link.title} key={link.title}>
+            <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+              {link.title}
+            </li>
+          </Link>
+        ))}
+        <Link href="/blog">
+          <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+            Blog
+          </li>
+        </Link>
+        <Link href="/contact">
+          <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+            Contact
+          </li>
+        </Link>
       </div>
     </div>
   );

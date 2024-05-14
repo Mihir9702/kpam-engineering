@@ -10,7 +10,7 @@ import data from "@/helpers/content.json";
 export default function StreamlinedScadaText() {
   return (
     <section>
-      <div className="bg-gray-100 flex items-start justify-center gap-8 py-8">
+      <div className="bg-gray-100 flex flex-col md:flex-row px-4 md:px-0 justify-center items-start gap-8 py-8">
         <LeftColumn />
         <RightColumn />
       </div>
@@ -116,7 +116,7 @@ function Banner() {
 
 function Advantages() {
   return (
-    <section className="bg-gray-100 flex justify-center md:gap-40 py-8">
+    <section className="bg-gray-100 flex flex-col md:flex-row justify-center py-8">
       <div className="max-w-2xl">
         {data.streamlinedScada.advantages.map((textContent) => (
           <Content

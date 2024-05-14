@@ -5,7 +5,7 @@ import imgSrc from '@/assets/stock/Strategic.jpg'
 
 export default function StrategicAdvisorySystemIntegrationText() {
   return (
-    <section className="bg-gray-100 flex justify-center items-start gap-8 py-16">
+    <section className="bg-gray-100 flex flex-col px-3 md:px-0 md:flex-row justify-center items-start gap-8 py-16">
       <div className="max-w-2xl flex flex-col gap-8">
         {data.strategicAdvisorySystem.column.map((textContent) => (
           <Content
