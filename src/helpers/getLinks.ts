@@ -8,7 +8,11 @@ import RetrofittingMigration from '@/../public/kpam/RetroFitting Migration.jpg'
 import AutomationProcessControls from '@/../public/kpam/Automation and Process Controls.jpg';
 import MachineryDesignConstruction from '@/../public/kpam/Machinery Design and Construction.jpg';
 
-export const cards = [
+import OEE from '@/../public/kpam/Enhancing Overall.jpg';
+import ConsultingIntegration from '@/../public/Consulting and Integration.jpg'
+import OnsiteRemoteService from '@/../public/24-HOUR SERVICE.jpg'
+
+export const AutomationSolutionsLink = [
   {
     title: AutomationSolutionsList[0],
     href: "/digital-automation-transformation",
@@ -29,7 +33,7 @@ export const cards = [
   },
 ];
 
-export const moreCards = [
+export const ProductServicesLink = [
   {
     title: ProductServicesList[0],
     href: "/retrofitting-migration",
@@ -48,4 +52,23 @@ export const moreCards = [
     src: MachineryDesignConstruction,
     alt: ProductServicesList[2],
   },
+
+  {
+    title: ProductServicesList[3],
+    href: "/oee-overall-equipment",
+    src: OEE,
+    alt: ProductServicesList[3],
+  },
+  {
+    title: ProductServicesList[4],
+    href: "/consulting-integration",
+    src: ConsultingIntegration,
+    alt: ProductServicesList[4],
+  },
+  {
+    title: ProductServicesList[5],
+    href: "/onsite-remote-support",
+    src: OnsiteRemoteService,
+    alt: ProductServicesList[5],
+  }
 ]

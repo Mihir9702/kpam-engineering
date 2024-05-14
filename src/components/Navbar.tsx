@@ -2,7 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import imgSrc from "../../public/logo.png";
 import { useState } from "react";
-import { cards, moreCards } from "@/helpers/getCards";
+import {
+  AutomationSolutionsLink,
+  ProductServicesLink,
+} from "@/helpers/getLinks";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
@@ -11,7 +14,7 @@ export default function Navbar() {
 
   const router = useRouter();
   return (
-    <nav className="flex bg-gray-100 justify-around items-center py-12">
+    <nav className="flex bg-gray-100 text-gray-900 justify-around items-center py-12">
       <Image src={imgSrc} alt="logo" onClick={() => router.push("/")} />
       <ul className="flex justify-end gap-10 p-4 text-xl">
         <li className="hover:text-kpam-blue">
@@ -32,20 +35,21 @@ export default function Navbar() {
                 gap-1 my-1 z-10 bg-gray-100 border-2 border-kpam-blue
                 text-[16px] max-w-[200px] text-center rounded-lg"
             >
-              {cards.map((card, i) => (
-                <Link key={card.title} href={card.href}>
+              {AutomationSolutionsLink.map((item, i) => (
+                <Link key={item.title} href={item.href}>
                   <li
                     className={`${
                       i % 2 !== 0 ? "bg-gray-200" : ""
                     } hover:bg-kpam-blue hover:text-white cursor-pointer`}
                   >
-                    {card.title}
+                    {item.title}
                   </li>
                 </Link>
               ))}
             </ul>
           )}
         </li>
+
         <li onMouseOver={() => setShowProductServices(true)}>
           <p
             className={`${
@@ -61,14 +65,14 @@ export default function Navbar() {
                 gap-1 my-1 z-10 bg-gray-100 border-2 border-kpam-blue
                 text-[16px] max-w-[200px] text-center rounded-lg"
             >
-              {moreCards.map((card, i) => (
-                <Link key={card.title} href={card.href}>
+              {ProductServicesLink.map((item, i) => (
+                <Link key={item.title} href={item.href}>
                   <li
                     className={`${
                       i % 2 !== 0 ? "bg-gray-200" : ""
                     } hover:bg-kpam-blue hover:text-white cursor-pointer`}
                   >
-                    {card.title}
+                    {item.title}
                   </li>
                 </Link>
               ))}
