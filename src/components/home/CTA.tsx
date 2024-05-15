@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CTA() {
   // Call To Action
   return (
@@ -16,9 +18,12 @@ export default function CTA() {
         </p>
       </div>
 
-      <button className="uppercase font-bold bg-kpam-blue hover:bg-kpam-blue-o transition-all w-fit mx-auto rounded-md px-8 p-3">
+      <Link
+        href="/contact"
+        className="uppercase font-bold bg-kpam-blue hover:bg-kpam-blue-o transition-all w-fit mx-auto rounded-md px-8 p-3"
+      >
         Get in touch
-      </button>
+      </Link>
     </main>
   );
 }

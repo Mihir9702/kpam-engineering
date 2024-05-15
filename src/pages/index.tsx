@@ -1,4 +1,5 @@
 import Action from "@/components/home/Action";
+import Blog from "@/components/home/Blog"
 import Content from "@/components/home/Content";
 import CTA from "@/components/home/CTA"
 import Feature from "@/components/home/Feature"
@@ -31,9 +32,12 @@ export default function Home() {
         content=""
         cards={ProductServicesLink.slice(Math.floor(ProductServicesLink.length / 2))}
       />
-      <div className="py-8 bg-gray-100" />
 
+      <Blog />
+
+      <div className="py-8 bg-gray-100" />
       <CTA />
+      <div className="py-8 bg-gray-100" />
     </main>
   );
 }

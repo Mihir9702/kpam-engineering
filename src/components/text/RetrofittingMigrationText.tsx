@@ -7,7 +7,7 @@ import AutomationImprovementSrc from "@/assets/cartoon/Automation Improvement.pn
 export default function RetrofittingMigrationText() {
   return (
     <section>
-      <div className="bg-gray-100 px-3 md:px-0 flex flex-col md:flex-row items-start justify-center gap-8 py-16">
+      <div className="bg-gray-100 px-3 md:px-0 flex flex-col md:flex-row items-start justify-center gap-4 py-16">
         <div className="max-w-2xl flex flex-col gap-8">
           <Content
             title={data.retrofittingMigration.title.title}

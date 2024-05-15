@@ -18,8 +18,37 @@ body {
   height: 100%;
 }
 
+.global-standard {
+  background-image: url('../assets/Hero.webp');
+  background-size: cover;
+  background-position: center center;
+}
+
+.feature-section {
+  background-image: url('../assets/banner.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
 @media screen and (max-width: 767px) {
   .card-image {
     width: 100%;
   }
+}
+
+::-webkit-scrollbar {
+  width: .75em; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-kpam-blue;
 }

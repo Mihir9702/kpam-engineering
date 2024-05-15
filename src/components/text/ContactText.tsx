@@ -2,13 +2,12 @@ import { useState } from "react";
 
 export default function ContactText() {
   return (
-    <section className="bg-gray-100" id="contact">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <section className="bg-gray-100 py-8" id="contact">
         <ContactTitle />
-        <div className="flex items-stretch justify-center">
+        <div className="flex items-stretch justify-center p-2">
           <div className="grid md:grid-cols-2">
-            <div className="h-full pr-6">
-              <p className="mt-3 mb-12 text-lg">
+            <div className="h-full">
+              <p className="mb-6 md:text-lg text-center md:text-left max-w-lg">
                 We value your feedback and inquiries. Please feel free to reach
                 out to us using any of the methods below. Our dedicated team is
                 here to assist you.
@@ -20,7 +19,6 @@ export default function ContactText() {
             <ContactForm />
           </div>
         </div>
-      </div>
     </section>
   );
 }
@@ -32,7 +30,7 @@ function ContactTitle() {
         <h2 className="font-heading mb-4 font-bold tracking-tight text-kpam-blue text-3xl sm:text-5xl">
           Get in Touch
         </h2>
-        <p className="mx-auto mt-4 max-w-3xl text-xl">
+        <p className="mx-auto mt-4 max-w-3xl text-lg md:text-xl">
           Looking for assistance? We&apos;re here to help
         </p>
       </div>
@@ -64,7 +62,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
+    <div className="card h-fit max-w-6xl" id="form">
       <form id="contactForm" onSubmit={handleSubmit}>
         <div className="mb-6">
           <div className="mx-0 mb-1 sm:mb-4">
@@ -137,7 +135,7 @@ function ContactForm() {
 
 function ContactInfo() {
   return (
-    <ul className="mb-6 md:mb-0">
+    <ul>
       <li className="flex items-center">
         <div className="flex h-10 w-10 items-center justify-center rounded bg-kpam-blue text-gray-100">
           <svg

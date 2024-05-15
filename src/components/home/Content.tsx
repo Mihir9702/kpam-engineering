@@ -2,10 +2,10 @@ import Card from "./Card";
 
 export default function Content({ title, content, cards }: Content) {
   return (
-    <main>
-      <section className="bg-gray-100 text-center py-12">
+    <main className="">
+      <section className="bg-gray-100 text-center py-4">
         <div className="flex flex-col gap-4">
-          <h1 className="text-kpam-blue mt-4 text-3xl font-semibold uppercase">
+          <h1 className="text-kpam-blue mt-8 text-3xl font-semibold uppercase">
             {title}
           </h1>
           <h2 className="font-light text-gray-950 text-xl max-w-4xl mx-auto">

@@ -1,6 +1,6 @@
 export default function Feature() {
   return (
-      <section className="py-16 bg-kpam-blue-o">
+      <section className="py-16 feature-section">
         <div className="text-white text-center flex flex-col gap-4">
           <h1 className="text-3xl font-semibold">Our Platform Agnosticism</h1>
           <h2 className="text-xl">

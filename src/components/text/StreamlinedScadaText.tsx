@@ -10,7 +10,7 @@ import data from "@/helpers/content.json";
 export default function StreamlinedScadaText() {
   return (
     <section>
-      <div className="bg-gray-100 flex flex-col md:flex-row px-4 md:px-0 justify-center items-start gap-8 py-8">
+      <div className="bg-gray-100 flex flex-col md:flex-row px-4 md:px-0 justify-center items-start gap-4 py-8">
         <LeftColumn />
         <RightColumn />
       </div>

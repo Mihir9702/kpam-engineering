@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from '@/assets/logo-away.png'
+import { useDispatch, useSelector } from "react-redux"
+import { toggleAutomation, toggleProduct } from "@/navbarSlice"
+import { useEffect } from "react"
 
 export default function Footer() {
+
   return (
     <footer className="relative pt-8 pb-6 bg-kpam-blue">
       <div className="container mx-auto px-4">

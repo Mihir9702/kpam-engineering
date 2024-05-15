@@ -4,7 +4,7 @@ import BenefitsTailoredSrc from "@/assets/stock/Benefits of Tailored.jpg";
 
 export default function DigitalAutomationTransformationText() {
   return (
-    <div className="flex flex-col gap-8 w-full max-w-2xl">
+    <div className="flex flex-col gap-4 w-full max-w-2xl">
       <h1 className="text-kpam-blue font-semibold text-3xl">
         Digital Automation Equipment
       </h1>
@@ -71,9 +71,9 @@ export default function DigitalAutomationTransformationText() {
       <br />
       <div className="flex flex-col md:flex-row">
         <Image src={AssemblyEquipmentSrc} alt="assembly-equipment" className="" />
-        <ul className="list-disc mx-16 text-nowrap">
+        <ul className="list-disc mx-16 mt-4 text-nowrap">
           <li>Assembly Equipment</li>
-          <li>Medical Textile (Suture Tipping & Cutting)</li>
+          <li>Medical Textile</li>
           <li>Spoolers</li>
           <li>Winders</li>
           <li>Braiders</li>

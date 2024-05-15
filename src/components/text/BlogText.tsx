@@ -1,7 +1,3 @@
-import post1 from "@/assets/cartoon/post1.png";
-import post2 from "@/assets/cartoon/post2.png";
-import Image from "next/image";
-
 export default function BlogText() {
   return (
     <section className="bg-gray-100 py-8">
@@ -13,7 +9,12 @@ export default function BlogText() {
           We always have something to share!
         </h2>
 
-        <div className="flex flex-col gap-4 p-4 my-8">
+        <h3 className="text-center my-12">
+          Hmm... it seems like there are no posts currently. <br /> 
+          Come back soon when there are more posts!
+        </h3>
+
+        {/* <div className="flex flex-col gap-4 p-4 my-8">
           {[post1, post2, post1, post2, post1, post2].map((post, i) => {
             return (
               <div
@@ -39,7 +40,7 @@ export default function BlogText() {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   );
