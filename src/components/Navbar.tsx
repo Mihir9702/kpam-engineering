@@ -3,17 +3,18 @@ import Link from "next/link";
 import imgSrc from "@/assets/logo.png";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import { AutomationSolutionsLink, ProductServicesLink } from "@/helpers/links";
 import ChevronUp from "@/assets/svg/chevron-up.svg";
 import ChevronDown from "@/assets/svg/chevron-down.svg";
 import Menu from "@/assets/svg/menu.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleAutomation, toggleProduct } from "@/navbarSlice";
 import OutsideClickDetector from "./OutsideClickDetector";
+import { toggleAutomation, toggleMobile, toggleProduct } from "@/slice";
+import { AutomationSolutionsLink, ProductServicesLink } from "@/utils/links";
 
 export default function Navbar() {
   const router = useRouter();
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const dispatch = useDispatch()
+  const toggles = useSelector((state: any) => state.navbar);
 
   return (
     <nav className="flex bg-gray-100 text-gray-900 justify-between lg:justify-around px-4 lg:px-0 items-center py-2">
@@ -27,10 +28,11 @@ export default function Navbar() {
       <Image
         src={Menu}
         alt="menu-icon"
-        className="lg:hidden"
-        onClick={() => setToggleMenu(!toggleMenu)}
+        className="absolute top-10 right-10 lg:hidden"
+        onClick={() => dispatch(toggleMobile())}
       />
-      {toggleMenu && <MobileNavView />}
+
+      {toggles.mobile && <MobileMenu />}
       <Links />
     </nav>
   );
@@ -148,63 +150,71 @@ function ProductAndServices() {
     </div>
   );
 }
-function MobileNavView() {
+function MobileMenu() {
+  const [toggleAutomationSolutions, setToggleAutomationSolutions] =
+    useState(false);
+  const [toggleProductServices, setToggleProductServices] = useState(false);
+
   const dispatch = useDispatch();
-  const toggles = useSelector((state: any) => state.navbar);
 
   return (
-    <div
-      className={`absolute top-24 right-10 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
-    >
-      <div className={`p-1 py-2`} role="none">
-        <Link href="/about">
-          <li className="cursor-pointer block px-4 py-2 text-center text-sm">
-            About
+    <OutsideClickDetector onOutsideClick={() => dispatch(toggleMobile())}>
+      <div
+        className={`absolute top-24 right-10 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
+      >
+        <div className={`p-1 py-2`} role="none">
+          <Link href="/about">
+            <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+              About
+            </li>
+          </Link>
+          <li
+            onClick={() =>
+              setToggleAutomationSolutions(!toggleAutomationSolutions)
+            }
+            className="cursor-pointer block px-4 py-2 text-center text-sm bg-gray-100"
+          >
+            Automation Solutions
           </li>
-        </Link>
-        <li
-          onClick={() => dispatch(toggleAutomation())}
-          className="cursor-pointer block px-4 py-2 text-center text-sm bg-gray-100"
-        >
-          Automation Solutions
-        </li>
-        {toggles.automation &&
-          AutomationSolutionsLink.map((link, i) => (
-            <Link href={link.href} title={link.title} key={link.title}>
-              <li
-                className={`${
-                  i % 2 == 0 ? "bg-white" : "bg-gray-200"
-                } cursor-pointer block px-4 py-2 text-center text-sm`}
-              >
-                {link.title}
-              </li>
-            </Link>
-          ))}
-        <li
-          onClick={() => dispatch(toggleProduct())}
-          className="cursor-pointer block px-4 py-2 text-center text-sm"
-        >
-          Product & Services
-        </li>
-        {toggles.product &&
-          ProductServicesLink.map((link, i) => (
-            <Link href={link.href} title={link.title} key={link.title}>
-              <li className="cursor-pointer block px-4 py-2 text-center text-sm">
-                {link.title}
-              </li>
-            </Link>
-          ))}
-        <Link href="/blog">
-          <li className="cursor-pointer block px-4 py-2 text-center text-sm">
-            Blog
+          {toggleAutomationSolutions &&
+            AutomationSolutionsLink.map((link, i) => (
+              <Link href={link.href} title={link.title} key={link.title}>
+                <li
+                  className={`${
+                    i % 2 == 0 ? "bg-white" : "bg-gray-200"
+                  } cursor-pointer block px-4 py-2 text-center text-sm`}
+                >
+                  {link.title}
+                </li>
+              </Link>
+            ))}
+          <li
+            onClick={() => setToggleProductServices(!toggleProductServices)}
+            className="cursor-pointer block px-4 py-2 text-center text-sm"
+          >
+            Product & Services
           </li>
-        </Link>
-        <Link href="/contact">
-          <li className="cursor-pointer block px-4 py-2 text-center text-sm">
-            Contact
-          </li>
-        </Link>
+          {toggleProductServices &&
+            ProductServicesLink.map((link, i) => (
+              <Link href={link.href} title={link.title} key={link.title}>
+                <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+                  {link.title}
+                </li>
+              </Link>
+            ))}
+
+          <Link href="/blog">
+            <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+              Blog
+            </li>
+          </Link>
+          <Link href="/contact">
+            <li className="cursor-pointer block px-4 py-2 text-center text-sm">
+              Contact
+            </li>
+          </Link>
+        </div>
       </div>
-    </div>
+    </OutsideClickDetector>
   );
 }

@@ -1,4 +1,4 @@
-import data from "@/helpers/content.json";
+import data from "@/utils/content.json";
 import Content from "../Content";
 import Image from "next/image";
 import AutomationUpgradingSrc from "@/assets/stock/Automation Upgrading.jpg";

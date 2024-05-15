@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from '@/assets/logo-away.png'
 import { useDispatch, useSelector } from "react-redux"
-import { toggleAutomation, toggleProduct } from "@/navbarSlice"
+import { toggleAutomation, toggleProduct } from "@/slice"
 import { useEffect } from "react"
 
 export default function Footer() {

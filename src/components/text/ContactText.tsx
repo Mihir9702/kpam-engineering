@@ -185,8 +185,11 @@ function ContactInfo() {
           <h3 className="mb-2 text-lg font-medium leading-6 text-kpam-blue">
             Contact
           </h3>
-          <p>Mobile: +1 (267) 949-5726</p>
+          <p>Mobile: +1 (267) 949 5726</p>
           <p>Mail: info@kpameng.com</p>
+
+          {/* <div>Mobile: <Link href="tel:+12679495726" className="text-blue-500">+1 (267) 949-5726</Link></div>
+          <div>Mail: <Link href="mailto:info@kpameng.com" className="text-blue-500">info@kpameng.com</Link></div> */}
         </div>
       </li>
       <li className="flex items-center">

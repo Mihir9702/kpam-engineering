@@ -3,7 +3,7 @@ import Blog from "@/components/home/Blog"
 import Content from "@/components/home/Content";
 import CTA from "@/components/home/CTA"
 import Feature from "@/components/home/Feature"
-import { AutomationSolutionsLink, ProductServicesLink } from "@/helpers/links";
+import { AutomationSolutionsLink, ProductServicesLink } from "@/utils/links";
 
 export default function Home() {
   return (

@@ -5,7 +5,7 @@ import Experience from "@/assets/cartoon/SCADA Experience.jpg";
 import Innovation from "@/assets/cartoon/SCADA Innovation.png";
 import Panel from "@/assets/cartoon/SCADA Panel.jpg";
 import Content from "../Content";
-import data from "@/helpers/content.json";
+import data from "@/utils/content.json";
 
 export default function StreamlinedScadaText() {
   return (
